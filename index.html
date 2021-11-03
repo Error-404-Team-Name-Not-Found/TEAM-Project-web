@@ -16,13 +16,13 @@ Code <!DOCTYPE html>
                     <h2 class="title">Sign in</h2>
                     <div class="inputs">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Username" id="Username">
                     </div>
                     <div class="inputs">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="password">
+                        <input type="password" placeholder="password" id="password">
                     </div>
-                    <input type="submit" class="submit-btn" value="Login">
+                    <input type="submit" class="submit-btn" value="Login" onclick="ValidateLogin()">
                     <p class="social-text">Follow our social media</p>
                     <div class="social-media">
                         <ul>
@@ -54,8 +54,8 @@ Code <!DOCTYPE html>
 </html>
 <script>
 function ValidateLogin(){
- Username = document.getElementById("[]").value;
- Password = document.getElementById("[]").value;
+ Username = document.getElementById("[Username]").value;
+ Password = document.getElementById("[password]").value;
  If {(Username ="Operator1" AND Password="XBZA") or (Username ="Technical1" AND Password="AZBX")
       alert("Login Information is succeful"); 
 }
