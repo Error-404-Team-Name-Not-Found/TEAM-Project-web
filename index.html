@@ -54,9 +54,10 @@
 </html>
 <script>
 function ValidateLogin(){
- Username = document.getElementById("[Username]").value;
- Password = document.getElementById("[password]").value;
- If {(Username ="Operator1" AND Password="XBZA") or (Username ="Technical1" AND Password="AZBX")
+ var UsernameV = document.getElementById("Username").value;
+ var Password = document.getElementById("password").value;
+ alert(UsernameV); /*TEST*/
+ if ((UsernameV =="Technical1" && Password=="AZBX") || (UsernameV =="Operator1" && Password=="XBZA")) {
       alert("Login Information is succeful"); 
 }
 else{
