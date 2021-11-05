@@ -1,74 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-
-    </style>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-    <title>Document</title>
-</head>
-<body>  
-    <div class="container">
-        <div class="forms">
-            <div class="panels">
-                <form action="#" class="sign-in">
-                    <h2 class="title">Sign in</h2>
-                    <div class="inputs">
-                        <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" id="Username">
-                    </div>
-                    <div class="inputs">
-                        <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="password" id="password">
-                    </div>
-                    <input type="submit" class="submit-btn" value="Login" onclick="ValidateLogin()">
-                    <p class="social-text">Follow our social media</p>
-                    <div class="social-media">
-                        <ul>
-                            <li>
-                                <i class="fab fa-facebook-square"></i>
-                            </li>
-                        </ul>   
-                    </div>
-                </form>
-             </div>
-        </div>
-    
-        <div class="panelcontainer">
-            <div class="panel-left">
-                <div class="content">
-                    <img src="service-desk.png" alt="" class="image">
-                </div>
-            </div>
-            <div class="panel-right">
-                <div class="content">
-                    <img src="unknown.png" alt="" class="image">
-                    <h3>About us!</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="login.js"></script>
-</body>
-<script>
-function ValidateLogin(){
- var UsernameV = document.getElementById("Username").value;
- var Password = document.getElementById("password").value; /*values from the html form*/
- alert(UsernameV); /*TEST*/
- if ((UsernameV =="Technical1" && Password=="AZBX") || (UsernameV =="Operator1" && Password=="XBZA")) {
-      alert("Login Information is succeful"); /*Alert message lets user aware if login is valid or not*/
-}
-else{
-  alert("login was unsucceful , try again");
-}
-
- }
-</script>
-<style>
 * { 
     margin: 0;
     padding: 0;
@@ -215,7 +147,73 @@ form{
     margin-top: -50%;
     left: 15%;
 }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <title>Document</title>
+</head>
+<body>  
+    <div class="container">
+        <div class="forms">
+            <div class="panels">
+                <form action="#" class="sign-in">
+                    <h2 class="title">Sign in</h2>
+                    <div class="inputs">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" id="Username">
+                    </div>
+                    <div class="inputs">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="password" id="password">
+                    </div>
+                    <input type="submit" class="submit-btn" value="Login" onclick="ValidateLogin()">
+                    <p class="social-text">Follow our social media</p>
+                    <div class="social-media">
+                        <ul>
+                            <li>
+                                <i class="fab fa-facebook-square"></i>
+                            </li>
+                        </ul>   
+                    </div>
+                </form>
+             </div>
+        </div>
+    
+        <div class="panelcontainer">
+            <div class="panel-left">
+                <div class="content">
+                    <img src="service-desk.png" alt="" class="image">
+                </div>
+            </div>
+            <div class="panel-right">
+                <div class="content">
+                    <img src="unknown.png" alt="" class="image">
+                    <h3>About us!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+<script>
+function ValidateLogin(){
+ var UsernameV = document.getElementById("Username").value;
+ var Password = document.getElementById("password").value; /*values from the html form*/
+ alert(UsernameV); /*TEST*/
+ if ((UsernameV =="Technical1" && Password=="AZBX") || (UsernameV =="Operator1" && Password=="XBZA")) {
+      alert("Login Information is succeful"); /*Alert message lets user aware if login is valid or not*/
+}
+else{
+  alert("login was unsucceful , try again");
+}
 
+ }
+</script>
+<style>
 </style>
 </html>
 
