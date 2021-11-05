@@ -55,10 +55,10 @@
 <script>
 function ValidateLogin(){
  var UsernameV = document.getElementById("Username").value;
- var Password = document.getElementById("password").value;
+ var Password = document.getElementById("password").value; /*values from the html form*/
  alert(UsernameV); /*TEST*/
  if ((UsernameV =="Technical1" && Password=="AZBX") || (UsernameV =="Operator1" && Password=="XBZA")) {
-      alert("Login Information is succeful"); 
+      alert("Login Information is succeful"); /*Alert message lets user aware if login is valid or not*/
 }
 else{
   alert("login was unsucceful , try again");
