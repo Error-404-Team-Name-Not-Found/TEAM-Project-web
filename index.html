@@ -173,11 +173,6 @@ form{
 
     <div class="container">
       <p style= "text-align:center;"><img src="makeitall.png" id="Positoner" width="25%" height="25%"></p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <div class="forms">
             <div class="panels">
                 <form action="#" class="sign-in">
@@ -223,9 +218,16 @@ form{
 function ValidateLogin(){
  var UsernameV = document.getElementById("Username").value;
  var Password = document.getElementById("password").value; /*values from the html form*/
- if ((UsernameV =="Technical1" && Password=="AZBX") || (UsernameV =="Operator1" && Password=="XBZA")) {
-      alert("Login Information is succeful"); /*Alert message lets user aware if login is valid or not*/
+ if | (UsernameV =="Operator1" && Password=="XBZA") {
+      alert("Login is succeful, Operator"); /*Alert message lets user aware if login is valid or not*/
+      window.open('Operator_dashboard.html');
+ }
+
+else if (UsernameV =="Technical1" && Password=="AZBX")   {
+    alert("Login is succeful,welcome Specialist");
+    window.open('Specialist_dashboard.html');
 }
+    
 else{
   alert("login was unsucceful , try again");
 }
